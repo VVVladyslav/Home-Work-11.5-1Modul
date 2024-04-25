@@ -1,6 +1,7 @@
 import java.util.Iterator;
 import java.util.stream.Stream;
 import java.util.stream.Stream.Builder;
+
 public class Mixer {
 
     public static <T> Stream<T> Swap(Stream<T> first, Stream<T> second){
@@ -14,8 +15,6 @@ public class Mixer {
             builder.add(firstIt.next());
             builder.add(secondIt.next());
         }
-
         return builder.build();
-
     }
 }
